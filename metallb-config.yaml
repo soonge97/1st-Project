@@ -1,0 +1,28 @@
+# kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.10/config/manifests/metallb-native.yaml
+
+---
+# 사용 apiversion
+apiVersion: metallb.io/v1beta1 
+kind: IPAddressPool
+metadata:
+  #해당 IPAddressPool 명과 사용하는 namespace
+  name: default
+  namespace: metallb-system
+spec:
+  addresses:
+  # 사용할 ip address pool
+  - 172.31.46.220-172.31.46.230
+  autoAssign: true
+
+--- 
+apiVersion: metallb.io/v1beta1 
+# metalib의 l2모드를 사용
+kind: L2Advertisement 
+metadata:
+  name: l2
+  # L2Advertisement이 사용할 namespace
+  namespace: metallb-system
+spec:
+   # 사용할 ipAddressPools을 추가해주는 데 위에 정의한 ipAddressPools을 사용하도록 한다.
+  ipAddressPools:
+    - default

@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: keepalived
+  namespace: kube-system
+spec:
+  selector:
+    matchLabels:
+      app: keepalived
+  template:
+    metadata:
+      labels:
+        app: keepalived
+    spec:
+      containers:
+        - name: keepalived
+          image: oscarlima/keepalived:latest
+          env:
+            - name: VIP
+              value: "10.100.120.5"  # 사용할 가상 IP
+            - name: DB_IP
+              value: "10.100.0.143"    # DB 노드 IP
+          volumeMounts:
+            - name: keepalived-config
+              mountPath: /etc/keepalived
+      volumes:
+        - name: keepalived-config
+          configMap:
+            name: keepalived-config
