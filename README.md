@@ -12,9 +12,7 @@
 
 ## 🖥️ 프로젝트 소개
 
-본 프로젝트는 3-Tier 구조의 온라인 신발 쇼핑몰 웹 서비스를 구축하는 것을 목표로 진행 했습니다.
-
-Kubernetes를 활용하여 인프라를 설계하였으며, 
+본 프로젝트는 3-Tier 구조를 기반으로 한 온라인 신발 쇼핑몰 웹 서비스를 구축하는 것을 목표로 진행되었습니다. 쿠버네티스를 활용하여 자동화된 배포, 확장성, 고가용성, 리소스 최적화를 통해 효율적으로 애플리케이션을 관리하였습니다. Dockerfile의 경량화에 중점을 두어 시스템 성능을 극대화하였으며, 다른 팀과의 차별화를 위해 Stacked ETCD 클러스터를 구성하여 메인 마스터노드 장애 시에도 시스템이 정상적으로 작동하도록 설계하였습니다. 이러한 기술적 기반을 통해 신뢰성과 확장성이 뛰어난 웹 서비스를 구현하였습니다.
 
 
 
@@ -22,7 +20,7 @@ Kubernetes를 활용하여 인프라를 설계하였으며,
 
 | Name | 이승환 | 유원종 | 이재혁 | 김민지 | 김홍섭 |
 | :------------: | :------------: | :------------: | :------------: | :------------: | :------------: |
-|  | ![임희진](https://github.com/user-attachments/assets/74459b22-c4b0-4718-9b90-4a8c89d94443) | ![이재혁](https://github.com/user-attachments/assets/5262f984-16b6-483d-9c59-cc4db778cfdb) | ![이창수](https://github.com/user-attachments/assets/75a42028-ef7c-4c3d-9062-f4a182c20379) | ![장정원](https://github.com/user-attachments/assets/28b895ad-0843-4e34-99e2-28ab5f64f14c) |
+|  | ![이승환](https://github.com/user-attachments/assets/bc73596c-1867-4965-a581-fe5ccdc2ffd8) | ![유원종](https://github.com/user-attachments/assets/86c9ac47-f92d-4495-a48d-d37f977b41dd) | ![이재혁](https://github.com/user-attachments/assets/98278fe0-2645-434f-8a00-58145ecaa79a) | ![김민지](https://github.com/user-attachments/assets/d239d835-4b56-405b-85fb-6b5c697928aa) | ![김홍섭](https://github.com/user-attachments/assets/69e9803b-c30f-4a59-9fa0-2ad22824bc56) |
 | __Position__ | Project Leader | Technology Leader| Engineer| Engineer| Engineer|
 
 
@@ -96,44 +94,32 @@ Kubernetes를 활용하여 인프라를 설계하였으며,
 
 
 ## 🧱 아키텍처
-![4조_2차프로젝트_시방서](https://github.com/user-attachments/assets/e9cd994c-5ebb-4e53-85a0-ff3125ee10a6)
+![아키텍처](https://github.com/user-attachments/assets/6f737c62-efa9-499f-9319-c63b6004e1cc)
 
 
 
 ## 🌐 PAGE
-* 메인 및 로그인
-![1 메인페이지](https://github.com/user-attachments/assets/76599271-acb9-48fd-a2de-fa272310640e)
+
+* 메인
+![메인페이지02](https://github.com/user-attachments/assets/8607847c-f7b5-41a5-a2aa-c10047a8a03f)
+
 
 * 회원가입
-![2 회원가입](https://github.com/user-attachments/assets/f180f118-23ac-448c-a1c9-65a73c27d8b7)
+![2 회원가입](https://github.com/user-attachments/assets/4b8ce25a-31a2-4ff4-becd-6799d5de71b7)
 
-* 로딩
-![3 주문1](https://github.com/user-attachments/assets/6bbbb31b-4486-4275-b0da-a531c8363518)
 
-* 주문
-![3 주문2](https://github.com/user-attachments/assets/05c045a8-1c04-4c4d-90bc-62882e0388fd)
+* 로그인
+
+![3 로그인](https://github.com/user-attachments/assets/7ce9f0e0-d489-4948-beed-e1a5e1da3016)
 
 ## 🧪 테스트 영상
 
-CA, HPA 부하테스트와 롤링업데이트,롤백 테스트영상은 용량 문제로 링크 첨부합니다.
+* Jmeter HPA 부하테스트
+![부하테스트](https://github.com/user-attachments/assets/34542399-ad87-48ac-a151-7a7f0f188ba2)
 
-* 데이터베이스 연동 테스트
-
-![DB연동테스트](https://github.com/user-attachments/assets/0e508d05-9273-420a-b137-17fa9f2a2272)
-
-* Redis 연동 테스트
-
-![Redis 테스트](https://github.com/user-attachments/assets/308fe7d9-ce8c-4114-9e30-406c72cfd224)
-
-* Jmeter 부하테스트 Whatap 모니터링
-  
-![CA테스트](https://github.com/user-attachments/assets/35a88447-f12a-4a24-9366-4109efca8e19)
-
-* Jmeter CA, HPA 부하테스트
-https://youtu.be/RAUeUEzNpuE?si=sQfnE0VihyQrZwnT
-
-* 롤링업데이트 & 롤백
-https://youtu.be/LRuzPJXX9fg?si=JPQDavTHgQ2bojkp
+* 롤링업데이트
+![롤링업데이트01](https://github.com/user-attachments/assets/5e459fac-b473-4443-bdc4-7c4656ecd209)
+![롤링업데이트02](https://github.com/user-attachments/assets/80be12a1-91f9-4619-b004-54c67e970e62)
 
 
 
