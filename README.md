@@ -115,10 +115,13 @@
 ## 🧪 테스트 영상
 
 * Jmeter HPA 부하테스트
+  
 ![부하테스트](https://github.com/user-attachments/assets/34542399-ad87-48ac-a151-7a7f0f188ba2)
 
 * 롤링업데이트
+  
 ![롤링업데이트01](https://github.com/user-attachments/assets/5e459fac-b473-4443-bdc4-7c4656ecd209)
+
 ![롤링업데이트02](https://github.com/user-attachments/assets/80be12a1-91f9-4619-b004-54c67e970e62)
 
 
