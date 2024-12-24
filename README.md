@@ -94,7 +94,7 @@
 
 
 ## 🧱 아키텍처
-![아키텍처](https://github.com/user-attachments/assets/6f737c62-efa9-499f-9319-c63b6004e1cc)
+![아키텍처](https://github.com/user-attachments/assets/074d7bbe-55c4-48e6-aa88-297e74ca11f6)
 
 
 
